@@ -47,9 +47,10 @@
 }
 
 /*Header Kesik Çizgi*/
-.right-header {
+/* .right-header {
   clip-path: polygon(10% 100%, 100% 100%, 100% 0, 0 0);
 }
+*/
 
 .wrapper {
   max-width: 1752px;

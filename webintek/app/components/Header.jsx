@@ -39,15 +39,15 @@ export default function Header() {
     <header>
       <div className="wrapper">
         <div className="container px-4">
-          <div className="flex justify-between">
+          <div className="flex justify-between bg-primary-color">
             <div className="left-header flex">
               <Link href={"/"}>
                 <Image src={"/logo1.svg"} width={60} height={60} />
               </Link>
             </div>
             <div className="right-header flex items-center">
-              <div className="menu-items flex w-full items-end ">
-                <ul className="w-full font-thin flex items-center justify-around text-white">
+              <div className="menu-items flex w-full items-end">
+                <ul className="w-full font-thin flex items-center gap-x-5 justify-around text-white">
                   {menuItems.map((menuItem, index) => {
                     return (
                       <div key={index}>
