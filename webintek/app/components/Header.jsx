@@ -36,7 +36,7 @@ export default function Header() {
   const [activeLanguage, setActiveLanguage] = useState("TR");
 
   return (
-    <div className="grid grid-cols-4 w-full h-[80px] 2xl:h-[120px]">
+    <div className="grid grid-cols-4 w-full h-[80px] 2xl:h-[100px]">
       <div className="col-span-1 left-header flex w-full">
         <Link href={"/"} className="pl-40 flex items-center">
           <Image src={"/logo1.svg"} width={60} height={60} />
