@@ -20,6 +20,7 @@
   --third-color-700: #121212;
 
   --white-color: #fff;
+  --dark-color: #1e1e1e;
 }
 
 .container-lines {
@@ -57,4 +58,15 @@
   width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #e24413, #eb886a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.paragraph-linear-gradient-text {
+  background: linear-gradient(93deg, #fff 0%, #e2e2e2 68.34%);
+  background-clip: text;
 }

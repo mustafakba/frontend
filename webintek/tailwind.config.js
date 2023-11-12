@@ -42,6 +42,7 @@ module.exports = {
         "third-color-700": "var(--third-color-700)",
 
         "white-color": "var(--white-color)",
+        "dark-color": "var(--dark-color)",
       },
     },
   },

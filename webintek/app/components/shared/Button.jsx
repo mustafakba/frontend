@@ -15,7 +15,7 @@ export default function Button({
   className,
   type,
   width,
-  hover,
+  borderColor,
 }) {
   if (!variant) variant = "primary";
 
@@ -31,10 +31,13 @@ export default function Button({
     }
     onClick();
   };
+  const borderClass = borderColor
+    ? `border-${borderColor}`
+    : "border-primary-color";
 
   return (
     <button
-      className="bg-primary-color py-2 px-4 text-secondary-color"
+      className={`bg-transparent border ${borderClass} hover:border-primary-color hover:bg-primary-color py-2 px-6 text-secondary-color`}
       type={type}
       onClick={handleOnClick}
       style={{ width: width ?? "" }}
