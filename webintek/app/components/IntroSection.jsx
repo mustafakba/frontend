@@ -6,7 +6,7 @@ import Button from "./shared/Button";
 export default function IntroSection() {
   return (
     <div className="wrapper">
-      <section className="intro-section ">
+      <section className="intro-section relative ">
         <div className="h-[70dvh]">
           <Image
             src={"/banner.png"}
