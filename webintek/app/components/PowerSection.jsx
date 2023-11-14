@@ -24,7 +24,7 @@ export default function PowerSection() {
               alt="Kinza"
             />
           </div>
-          <div className="grid grid-cols-5 grid-rows-2 table-bottom-line">
+          <div className="grid grid-cols-5 grid-rows-2 table-bottom-line pb-10">
             <div className="grid h-full items-center relative justify-center grid-cols-2 col-span-2 col-start-2">
               <div className="logo flex items-center flex-col ">
                 <Image

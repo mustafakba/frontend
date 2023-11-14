@@ -107,9 +107,13 @@
   background-color: #121212;
   opacity: 0.1;
   left: 19%;
-  top: 65%;
+  top: 60%;
 }
 
 .news-section-background {
   background: linear-gradient(180deg, #fafafa 0%, #fff 32.25%);
+}
+
+.swiper {
+  overflow: visible !important;
 }

@@ -77,10 +77,10 @@ export default function ProjectSection() {
 
   return (
     <div>
-      <div className="absolute w-[400px] h-[400px] bg-primary-color bottom-0 z-0"></div>
+      <div className="absolute w-[400px] h-[400px] bg-primary-color bottom-0 z-5"></div>
       <section className="wrapper !m-0 z-10 relative">
         <div className="w-full flex justify-start">
-          <div className="wrapper-bg-items min-w-[50%] ml-[1%] flex  justify-start w-1/2">
+          <div className="wrapper-bg-items min-w-[50%] ml-[1%] flex  justify-start w-1/2 relative z-[2]">
             <div className="w-full">
               <div className="flex w-full">
                 <Image
@@ -147,15 +147,14 @@ export default function ProjectSection() {
                 </div>
                 <div className="other-products">
                   <Swiper
-                    slidesPerView={2}
-                    spaceBetween={30} // Slaytlar arasındaki boşluk
+                    slidesPerView={1.5}
+                    spaceBetween={50} // Slaytlar arasındaki boşluk
                     pagination={{ clickable: true }}
                     modules={[Pagination]}
                     className="mySwiper"
                     breakpoints={{
                       640: {
                         slidesPerView: 1,
-                        spaceBetween: 20,
                       },
                       1024: {
                         slidesPerView: 2,
@@ -165,14 +164,12 @@ export default function ProjectSection() {
                     {nonSelectedProjects.map((project) => (
                       <SwiperSlide key={project.id}>
                         <div
-                          className="relative cursor-pointer w-[400px] h-[300px] max-h-[400px] xl:min-w-[400px]"
+                          className="relative cursor-pointer"
                           onClick={() => handleProjectClick(project)}
                         >
-                          <Image
+                          <img
                             src={project.imageUrl}
-                            width={450}
-                            height={300}
-                            className="!w-full min-w-[300px] h-[300px] max-h-[300px]"
+                            className="h-[300px] w-full object-cover"
                           />
                           <div className="project-detail bottom-0 bg-dark-color py-2 text-sm tracking-wide px-2 z-50 absolute">
                             {project.title}
