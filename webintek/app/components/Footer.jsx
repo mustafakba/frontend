@@ -1,10 +1,12 @@
 "use client";
 
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer>
       <div className="bg-[#1e1e1e] py-20">
         <div className="container">
           <div className="top-footer flex justify-between items-center w-full !bg-[#1e1e1e]">
@@ -47,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="bg-[#1b1b1b]">
-        <div className="container py-20">
+        <div className="container pt-10">
           <div className="grid grid-cols-5">
             <div className="footer-items flex flex-col gap-y-3 text-white-color">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
@@ -81,21 +83,25 @@ export default function Footer() {
               </span>
             </div>
             <div className="footer-items flex flex-col gap-y-3 text-white-color">
-              <span className="title hover:text-primary-color mb-2 tracking-wide">
-                Politikalar
-              </span>
-              <span className="hover:text-primary-color text-sm tracking-wide">
-                Kalite Politikamız
-              </span>
-              <span className="hover:text-primary-color text-sm tracking-wide">
-                Gizlilik Politikamız
-              </span>
-              <span className="hover:text-primary-color text-sm tracking-wide">
-                Aydınlatma Metni
-              </span>
-              <span className="hover:text-primary-color text-sm tracking-wide">
-                KVKK
-              </span>
+              <div className="grid grid-rows-2 place-content-center place-items-center">
+                <div className="logo">
+                  <img src="/logo1.svg" alt="" />
+                </div>
+                <div className="social-media grid grid-cols-4 gap-x-2">
+                  <div className="flex items-center justify-center py-3 px-3 cursor-pointer bg-[#2e2e2e] hover:bg-primary-color">
+                    <FontAwesomeIcon icon={faFacebook} className="text-white" />
+                  </div>
+                  <div className="flex items-center justify-center py-3 px-3 cursor-pointer bg-[#2e2e2e] hover:bg-primary-color">
+                    <FontAwesomeIcon icon={faFacebook} className="text-white" />
+                  </div>
+                  <div className="flex items-center justify-center py-3 px-3 cursor-pointer bg-[#2e2e2e] hover:bg-primary-color">
+                    <FontAwesomeIcon icon={faFacebook} className="text-white" />
+                  </div>
+                  <div className="flex items-center justify-center py-3 px-3 cursor-pointer bg-[#2e2e2e] hover:bg-primary-color">
+                    <FontAwesomeIcon icon={faFacebook} className="text-white" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="footer-items flex flex-col gap-y-3 text-white-color">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
@@ -130,6 +136,109 @@ export default function Footer() {
               <span className="hover:text-primary-color text-sm tracking-wide">
                 Kategori 4
               </span>
+            </div>
+          </div>
+          <div className="border-b opacity-10 py-5"></div>
+          <div className="grid grid-cols-4 py-5 px-5">
+            <div className="bottom-footer-item border px-8 py-8 border-[#1b1b1b] hover:border-primary-color">
+              <div className="text-primary-color mb-5  tracking-wide">
+                Merkez Ofis
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/telephone.svg" alt="telephone" />
+                <div className="div">
+                  <a href="tel:+">+90 (216) 455 55 55</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/mail.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">mail.com</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/location.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">
+                    Orta Mah <br /> Kartal / İstanbul
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-footer-item border px-8 py-8 border-[#1b1b1b] hover:border-primary-color">
+              <div className="text-primary-color mb-5  tracking-wide">
+                Merkez Ofis
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/telephone.svg" alt="telephone" />
+                <div className="div">
+                  <a href="tel:+">+90 (216) 455 55 55</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/mail.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">mail.com</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/location.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">
+                    Orta Mah <br /> Kartal / İstanbul
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-footer-item border px-8 py-8 border-[#1b1b1b] hover:border-primary-color">
+              <div className="text-primary-color mb-5  tracking-wide">
+                Merkez Ofis
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/telephone.svg" alt="telephone" />
+                <div className="div">
+                  <a href="tel:+">+90 (216) 455 55 55</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/mail.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">mail.com</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/location.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">
+                    Orta Mah <br /> Kartal / İstanbul
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-footer-item border px-8 py-8 border-[#1b1b1b] hover:border-primary-color">
+              <div className="text-primary-color mb-5  tracking-wide">
+                Merkez Ofis
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/telephone.svg" alt="telephone" />
+                <div className="div">
+                  <a href="tel:+">+90 (216) 455 55 55</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/mail.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">mail.com</a>
+                </div>
+              </div>
+              <div className="flex gap-x-3 my-3 items-center text-white">
+                <img src="/location.svg" alt="telephone" />
+                <div className="div">
+                  <a href="mailto:kaba.mustafaa@gmail.com">
+                    Orta Mah <br /> Kartal / İstanbul
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
