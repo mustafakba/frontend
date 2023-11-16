@@ -39,8 +39,8 @@ export default function Home() {
     },
   ]);
   return (
-    <div className="relative">
-      <div className="pb-10 container-lines ">
+    <div className="relative intro-area">
+      <div className="pb-10  container-lines relative z-10">
         <IntroSection />
       </div>
       <div className="py-10 container-lines ">

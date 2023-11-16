@@ -103,7 +103,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="footer-items flex flex-col gap-y-3 text-white-color">
+            <div className="footer-items flex flex-col gap-y-3 text-white-color place-items-center">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
                 Kurumsal
               </span>
@@ -120,7 +120,7 @@ export default function Footer() {
                 Hakkımızda
               </span>
             </div>
-            <div className="footer-items flex flex-col gap-y-3 text-white-color">
+            <div className="footer-items flex flex-col gap-y-3 text-white-color place-items-center">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
                 Aktiviteler
               </span>

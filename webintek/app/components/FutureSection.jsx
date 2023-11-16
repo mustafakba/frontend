@@ -24,7 +24,7 @@ export default function FutureSection() {
                 </div>
                 <div className="text-primary-color">1996'dan Beri</div>
               </div>
-              <div className="inner-area flex flex-col gap-y-10 mt-12 3xl:w-[38%] w-[39.5%] ">
+              <div className="inner-area flex flex-col gap-y-10 mt-12 3xl:w-[38%] w-[36.5%] ">
                 <div>
                   <p className="italic text-lg font-[200]">
                     1996 yılında İstanbul/Türkiye'de kurulan Firma Yapı,

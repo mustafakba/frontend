@@ -74,12 +74,24 @@
   );
   background-size: 100% 100%;
 }
-
 /*Header Kesik Çizgi*/
 /* .right-header {
   clip-path: polygon(10% 100%, 100% 100%, 100% 0, 0 0);
 }
 */
+.intro-area::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0; /* Üst kenara sıfırla */
+  right: 0; /* Sağ kenara sıfırla */
+  border-left: 70vw solid transparent; /* Sol taraftan %40 genişlik */
+  border-top: 80vh solid var(--primary-color); /* Üst taraftan %80 yükseklik (renk değiştirilebilir) */
+  margin-top: -10%;
+  margin-right: 0;
+}
 
 .wrapper {
   max-width: 1752px;
