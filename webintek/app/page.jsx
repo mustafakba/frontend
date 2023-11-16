@@ -40,13 +40,13 @@ export default function Home() {
   ]);
   return (
     <div className="relative intro-area">
-      <div className="pb-10  container-lines relative z-10">
+      <div className="pb-5 md:pb-10  container-lines relative z-10">
         <IntroSection />
       </div>
-      <div className="py-10 container-lines ">
+      <div className="pb-5 md:pb-10 container-lines ">
         <FutureSection />
       </div>
-      <div className="py-10 projects relative bg-dark-color text-white-color z-10">
+      <div className="pb-5 md:pb-10 projects relative bg-dark-color text-white-color z-10">
         <ProjectSection />
       </div>
       <div>
