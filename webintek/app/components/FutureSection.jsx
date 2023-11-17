@@ -61,7 +61,7 @@ export default function FutureSection() {
         <div className="wrapper">
           <div className="w-full flex flex-col md:flex-row">
             <div className="md:w-1/2 flex justify-center">
-              <div className="md:w-[44.8%] md:ml-[3.2rem] text-center">
+              <div className="xl:w-[40.9%] xl:ml-[6.2rem] 2xl:w-[44.8%] 2xl:ml-[3.2rem] underline-lines text-center">
                 <ul>
                   <li className=" border-b py-5">
                     <div className="text-primary-color md:text-[4rem]">23+</div>
