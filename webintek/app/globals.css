@@ -138,5 +138,11 @@
 }
 
 .swiper {
-  overflow: visible !important;
+  overflow: hidden; /* Varsayılan değer */
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    overflow: visible !important;
+  }
 }

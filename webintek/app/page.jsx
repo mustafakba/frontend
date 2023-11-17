@@ -1,22 +1,10 @@
 "use client";
-import Image from "next/image";
-import Button from "./components/shared/Button";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-
-import {
-  faAngleRight,
-  faArrowLeft,
-  faArrowRight,
-  faGlobe,
-} from "@fortawesome/free-solid-svg-icons";
 import IntroSection from "./components/IntroSection";
 import FutureSection from "./components/FutureSection";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+
 import ProjectSection from "./components/ProjectSection";
 import PowerSection from "./components/PowerSection";
 import NewsUs from "./components/NewsUs";

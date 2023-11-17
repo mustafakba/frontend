@@ -6,8 +6,11 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="relative">
       <div className="bg-[#1e1e1e] py-20">
+        <div className="right-background-image absolute top-[3%] right-0">
+          <img src="/right-bg-image.png" alt="" className="h-[100%]" />
+        </div>
         <div className="container">
           <div className="top-footer px-5 md:px-0 flex flex-col md:flex-row justify-between items-center w-full !bg-[#1e1e1e]">
             <div className="certificates md:w-[50%] grid grid-cols-3 gap-x-5">

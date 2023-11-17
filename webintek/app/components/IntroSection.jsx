@@ -12,7 +12,7 @@ export default function IntroSection() {
             src={"/banner.png"}
             width={1400}
             height={400}
-            className="flex h-full w-full"
+            className="flex object-cover h-full w-full"
           />
         </div>
         <div className="container px-4">
@@ -35,7 +35,7 @@ export default function IntroSection() {
                 />
               </div>
             </div>
-            <div className="slider-paragraph text-4xl py-5 leading-[45px]">
+            <div className="slider-paragraph md:text-4xl py-5 md:leading-[45px]">
               <span className="font-[300]">Geleceğin</span> <br />
               <span className="font-[300]">İnşaası,</span>{" "}
               <span className="font-medium">

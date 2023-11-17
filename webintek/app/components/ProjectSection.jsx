@@ -47,6 +47,7 @@ export default function ProjectSection() {
   ];
 
   const [selectedProject, setSelectedProject] = useState(projects[0]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleRightArrowClick = () => {
     const currentIndex = projects.findIndex(
@@ -54,13 +55,14 @@ export default function ProjectSection() {
     );
     const nextIndex = (currentIndex + 1) % projects.length;
     setSelectedProject(projects[nextIndex]);
+    setCurrentIndex(nextIndex);
   };
   const handleLeftArrowClick = () => {
-    const currentIndex = projects.findIndex(
-      (project) => project.id === selectedProject.id
-    );
-    const nextIndex = (currentIndex - 1) % projects.length;
-    setSelectedProject(projects[nextIndex]);
+    if (currentIndex > 0) {
+      const nextIndex = (currentIndex - 1) % projects.length;
+      setSelectedProject(projects[nextIndex]);
+      setCurrentIndex(nextIndex); // currentIndex'i güncelle
+    }
   };
 
   const handleProjectClick = (project) => {
@@ -77,7 +79,7 @@ export default function ProjectSection() {
 
   return (
     <div>
-      <div className="hidden md:absolute w-[400px] h-[400px] bg-primary-color bottom-0 z-5"></div>
+      <div className="hidden md:block md:absolute w-[500px] h-[500px] bg-primary-color bottom-0 z-5"></div>
       <section className="wrapper !m-0 z-10 relative">
         <div className="w-full flex flex-col pt-10 md:pt-0 md:flex-row justify-start">
           <div className="wrapper-bg-items md:min-w-[50%] md:ml-[1%] flex  justify-start md:w-1/2 relative z-[2]">
@@ -85,7 +87,7 @@ export default function ProjectSection() {
               <div className="flex w-full">
                 <Image
                   src={selectedProject.imageUrl}
-                  className="w-full md:max-h-[800px] md:h-[800px] object-cover left-image"
+                  className="w-full h-[400px] md:h-[900px] object-cover left-image"
                   width={600}
                   height={600}
                   alt="OUR PROJECTS"
@@ -102,7 +104,9 @@ export default function ProjectSection() {
                 <div className="arrow-buttons flex items-center">
                   <div
                     onClick={handleLeftArrowClick}
-                    className="flex w-20  cursor-pointer"
+                    className={`flex w-20 cursor-pointer ${
+                      currentIndex === 0 ? "opacity-30" : "opacity-100"
+                    }`}
                   >
                     <Image
                       src={"/long-vector.svg"}
@@ -137,12 +141,14 @@ export default function ProjectSection() {
                     title={"Bizi Tanıyın"}
                     borderColor={"#fff"}
                     icon={faAngleRight}
+                    textColor={"#fff"}
                   />
 
                   <Button
                     title={"Tüm Projeler"}
                     borderColor={"#fff"}
                     icon={faAngleRight}
+                    textColor={"#fff"}
                   />
                 </div>
                 <div className="other-products">

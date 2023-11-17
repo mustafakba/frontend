@@ -21,7 +21,7 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: "0.75",
+        padding: "0.75rem",
       },
       colors: {
         "primary-color": "var(--primary-color)",
