@@ -77,15 +77,15 @@ export default function ProjectSection() {
 
   return (
     <div>
-      <div className="absolute w-[400px] h-[400px] bg-primary-color bottom-0 z-5"></div>
+      <div className="hidden md:absolute w-[400px] h-[400px] bg-primary-color bottom-0 z-5"></div>
       <section className="wrapper !m-0 z-10 relative">
-        <div className="w-full flex justify-start">
-          <div className="wrapper-bg-items min-w-[50%] ml-[1%] flex  justify-start w-1/2 relative z-[2]">
+        <div className="w-full flex flex-col pt-10 md:pt-0 md:flex-row justify-start">
+          <div className="wrapper-bg-items md:min-w-[50%] md:ml-[1%] flex  justify-start md:w-1/2 relative z-[2]">
             <div className="w-full">
               <div className="flex w-full">
                 <Image
                   src={selectedProject.imageUrl}
-                  className="w-full max-h-[800px] h-[800px] object-cover"
+                  className="w-full md:max-h-[800px] md:h-[800px] object-cover left-image"
                   width={600}
                   height={600}
                   alt="OUR PROJECTS"
@@ -93,10 +93,10 @@ export default function ProjectSection() {
               </div>
             </div>
           </div>
-          <div className="container absolute left-[45%] -translate-x-1/2 pr-[2%]">
-            <div className="right-section items-end flex flex-col">
-              <div className="inner-area flex flex-col gap-y-8 3xl:w-[40%] w-[39.5%] ">
-                <div className="text-gradient text-[60px] tracking-wide">
+          <div className="container relative md:absolute md:left-[45%] md:-translate-x-1/2 md:pr-[2%]">
+            <div className="right-section md:items-end flex flex-col">
+              <div className="inner-area pt-5 flex flex-col gap-y-5 md:gap-y-8 md:3xl:w-[40%] md:w-[39.5%] ">
+                <div className="text-gradient md:text-[60px] tracking-wide">
                   Firma Yapı <span className="font-medium">Projeleri</span>
                 </div>
                 <div className="arrow-buttons flex items-center">
@@ -123,12 +123,12 @@ export default function ProjectSection() {
                     />
                   </div>
                 </div>
-                <div className="text-[34px] font-light">
+                <div className="md:text-[34px] font-light">
                   {/* mapledigimiz zaman title olacak*/}
                   {selectedProject.title} , <br />
                   <span>Havaalnı Abidjan</span>
                 </div>
-                <div className="opacity-[70%] font-thin text-[17px] paragraph-linear-gradient-text">
+                <div className="opacity-[70%] text-sm font-thin md:text-[17px] paragraph-linear-gradient-text">
                   {/* mapledigimiz zaman içerik olacak */}
                   <p>{selectedProject.description}</p>
                 </div>

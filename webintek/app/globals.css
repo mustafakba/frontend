@@ -92,6 +92,17 @@
   margin-top: -10%;
   margin-right: 0;
 }
+.intro-area::before {
+  content: "";
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 70vh;
+  right: 1%;
+  margin-right: 0;
+  background: url("/scroll.png");
+}
 
 .wrapper {
   max-width: 1752px;

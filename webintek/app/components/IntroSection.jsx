@@ -17,7 +17,24 @@ export default function IntroSection() {
         </div>
         <div className="container px-4">
           <div className="slider-info-area absolute top-[12%] ">
-            <div className="arrow-buttons">arrowlar gelecek</div>
+            <div className="arrow-buttons flex items-center">
+              <div className="flex w-20  cursor-pointer">
+                <Image
+                  src={"/long-vector.svg"}
+                  className="opacity-50 hover:opacity-100 duration-100 rotate-180"
+                  width={60}
+                  height={40}
+                />
+              </div>
+              <div className="flex w-20 cursor-pointer">
+                <Image
+                  src={"/long-vector.svg"}
+                  className="opacity-50 hover:opacity-100 duration-100 rotate-360 pt-3"
+                  width={60}
+                  height={20}
+                />
+              </div>
+            </div>
             <div className="slider-paragraph text-4xl py-5 leading-[45px]">
               <span className="font-[300]">Geleceğin</span> <br />
               <span className="font-[300]">İnşaası,</span>{" "}

@@ -9,9 +9,9 @@ export default function Footer() {
     <footer>
       <div className="bg-[#1e1e1e] py-20">
         <div className="container">
-          <div className="top-footer flex justify-between items-center w-full !bg-[#1e1e1e]">
-            <div className="certificates w-[50%] grid grid-cols-3 gap-x-5">
-              <div className="certificate h-[200px] flex items-center justify-center py-3 hover:border-primary-color hover:bg-primary-color border border-[#424242]">
+          <div className="top-footer px-5 md:px-0 flex flex-col md:flex-row justify-between items-center w-full !bg-[#1e1e1e]">
+            <div className="certificates md:w-[50%] grid grid-cols-3 gap-x-5">
+              <div className="certificate h-[100px] md:h-[200px] flex items-center justify-center py-3 hover:border-primary-color hover:bg-primary-color border border-[#424242]">
                 <Image
                   src={"/iso.png"}
                   width={100}
@@ -19,7 +19,7 @@ export default function Footer() {
                   className="h-full object-contain px-1"
                 />
               </div>
-              <div className="certificate flex items-center h-[200px] justify-center py-3 px-3 hover:border-primary-color hover:bg-primary-color border border-[#424242]">
+              <div className="certificate h-[100px] md:h-[200px] flex items-center justify-center py-3 hover:border-primary-color hover:bg-primary-color border border-[#424242]">
                 <Image
                   src={"/iso.png"}
                   width={100}
@@ -27,7 +27,7 @@ export default function Footer() {
                   className="h-full object-contain px-1"
                 />
               </div>
-              <div className="certificate flex items-center h-[200px] justify-center py-3 px-3 hover:border-primary-color hover:bg-primary-color border border-[#424242]">
+              <div className="certificate h-[100px] md:h-[200px] flex items-center justify-center py-3 hover:border-primary-color hover:bg-primary-color border border-[#424242]">
                 <Image
                   src={"/iso.png"}
                   width={100}
@@ -36,7 +36,7 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <div className="slogan text-primary-color text-5xl text-right">
+            <div className="text-primary-color text-3xl mt-5 md:mt-0 md:text-5xl text-right">
               <span className="paragraph-linear-gradient-text">
                 Kalitede Belgeli,
               </span>
@@ -50,7 +50,7 @@ export default function Footer() {
       </div>
       <div className="bg-[#1b1b1b]">
         <div className="container pt-10">
-          <div className="grid grid-cols-5">
+          <div className="grid grid-cols-2 px-5 md:px-0 md:grid-cols-5">
             <div className="footer-items flex flex-col gap-y-3 text-white-color">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
                 Kurumsal
@@ -65,7 +65,7 @@ export default function Footer() {
                 Tennis Courts
               </span>
             </div>
-            <div className="footer-items flex flex-col gap-y-3 text-white-color">
+            <div className="footer-items flex flex-col gap-y-3 text-white-color text-end md:text-left">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
                 Projeler
               </span>
@@ -82,7 +82,7 @@ export default function Footer() {
                 Marriott Hotel Kapadokya
               </span>
             </div>
-            <div className="footer-items flex flex-col gap-y-3 text-white-color">
+            <div className="footer-items my-10 md:my-10 col-span-2 md:col-span-1 flex flex-col gap-y-3 text-white-color">
               <div className="grid grid-rows-2 place-content-center place-items-center">
                 <div className="logo">
                   <img src="/logo1.svg" alt="" />
@@ -103,7 +103,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="footer-items flex flex-col gap-y-3 text-white-color place-items-center">
+            <div className="footer-items flex flex-col gap-y-3 text-white-color md:place-items-center">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
                 Kurumsal
               </span>
@@ -120,7 +120,7 @@ export default function Footer() {
                 Hakkımızda
               </span>
             </div>
-            <div className="footer-items flex flex-col gap-y-3 text-white-color place-items-center">
+            <div className="footer-items flex flex-col gap-y-3 text-white-color md:place-items-center text-end md:text-left">
               <span className="title hover:text-primary-color mb-2 tracking-wide">
                 Aktiviteler
               </span>
@@ -139,7 +139,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="border-b opacity-10 py-5"></div>
-          <div className="grid grid-cols-4 py-5 px-5">
+          <div className="grid grid-cols-2 md:grid-cols-4 py-5 md:px-5">
             <div className="bottom-footer-item border px-8 py-8 border-[#1b1b1b] hover:border-primary-color">
               <div className="text-primary-color mb-5  tracking-wide">
                 Merkez Ofis

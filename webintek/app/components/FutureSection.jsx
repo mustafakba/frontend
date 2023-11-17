@@ -6,8 +6,8 @@ export default function FutureSection() {
   return (
     <div>
       <section className="wrapper">
-        <div className="w-full flex md:gap-y-10 justify-start">
-          <div className="wrapper-bg-items order-2 md:order-1 md:min-w-[50%] flex md:h-[500px] justify-start md:w-1/2 my-5">
+        <div className="w-full flex flex-col md:flex-row md:gap-y-10 justify-start">
+          <div className="wrapper-bg-items order-2 md:order-1 md:min-w-[50%] flex md:h-[500px] justify-start md:w-1/2 my-5 md:my-0">
             <Image
               src={"/from-past-to-future.png"}
               className="w-full"
@@ -59,7 +59,7 @@ export default function FutureSection() {
           />
         </div>
         <div className="wrapper">
-          <div className="w-full flex flex-col">
+          <div className="w-full flex flex-col md:flex-row">
             <div className="md:w-1/2 flex justify-center">
               <div className="md:w-[44.8%] md:ml-[3.2rem] text-center">
                 <ul>

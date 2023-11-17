@@ -24,8 +24,8 @@ export default function PowerSection() {
               alt="Kinza"
             />
           </div>
-          <div className="grid grid-cols-5 grid-rows-2 table-bottom-line pb-10">
-            <div className="grid h-full items-center relative justify-center grid-cols-2 col-span-2 col-start-2">
+          <div className="grid md:grid-cols-5 md:grid-rows-2 table-bottom-line pb-10">
+            <div className="grid h-full items-center relative justify-center md:grid-cols-2 md:col-span-2 md:col-start-2">
               <div className="logo flex items-center flex-col ">
                 <Image
                   src={"/ahsaplogo.png"}
@@ -34,13 +34,13 @@ export default function PowerSection() {
                   className="h-auto w-auto"
                   alt="Kinza"
                 />
-                <div className="absolute bottom-[0%]">
+                <div className="my-2 md:my-0 md:absolute bottom-[0%]">
                   <Button title={"Web Sitesini Ziyaret Et"} icon={faGlobe} />
                 </div>
               </div>
-              <div className="title-info px-4 py-">
+              <div className="title-info px-4">
                 <div className="title text-primary-color text-lg">AHŞAP</div>
-                <div className="w-[90%] font-light pt-4">
+                <div className="md:w-[90%] font-light pt-4 mb-10">
                   1982 yılında kurulan AHŞAP Ürün Sanayi A.Ş. iç dekorasyon
                   taahhüt firmasıdır. İstanbul'daki fabrikamız bünyesinde özel
                   imalat sabit ve hareketli mobilya, dekoratif aydınlatma, cam
@@ -48,9 +48,18 @@ export default function PowerSection() {
                 </div>
               </div>
             </div>
-            <div className="grid h-full text-[#333333] opacity-40 items-center relative justify-center grid-cols-2 col-span-2 col-start-2 mt-12">
+            <div className="grid h-full text-[#333333] opacity-40 items-center relative justify-center md:grid-cols-2 md:col-span-2 md:col-start-2 md:mt-12">
+              <div className="logo md:hidden flex items-center flex-col gap-y-10 pt-10">
+                <Image
+                  src={"/ahsaplogo.png"}
+                  width={100}
+                  height={100}
+                  className="h-auto w-auto opacity-40"
+                  alt="Kinza"
+                />
+              </div>
               <div className="title-info px-4">
-                <div className="title  text-lg">AHŞAP</div>
+                <div className="title text-lg">AHŞAP</div>
                 <div className="w-[90%] font-light pt-4">
                   1982 yılında kurulan AHŞAP Ürün Sanayi A.Ş. iç dekorasyon
                   taahhüt firmasıdır. İstanbul'daki fabrikamız bünyesinde özel
@@ -58,7 +67,7 @@ export default function PowerSection() {
                   ve ahşap işleri yapmaktayız.
                 </div>
               </div>
-              <div className="logo flex items-center flex-col gap-y-10 pt-10">
+              <div className="logo hidden md:flex items-center flex-col gap-y-10 pt-10">
                 <Image
                   src={"/ahsaplogo.png"}
                   width={100}
@@ -68,8 +77,8 @@ export default function PowerSection() {
                 />
               </div>
             </div>
-            <div className="relative grid col-span-2 row-span-2 mt-[-10%]">
-              <div className="text-[60px] text-primary-color ">
+            <div className="relative px-4 md:px-0 md:grid md:col-span-2 md:row-span-2  mt-5 md:mt-[-10%]">
+              <div className="md:text-[60px] text-primary-color ">
                 İlerlemenin <br /> Gücü, Şirketler Grubuyla Bir Adım Önde
               </div>
             </div>
